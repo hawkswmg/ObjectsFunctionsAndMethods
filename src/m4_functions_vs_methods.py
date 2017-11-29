@@ -254,7 +254,7 @@ def try_methods_and_functions():
     John.pen = rg.Pen('blue',5)
     John.backward(150)
     John.speed = 1
-    draw_many_squares(John,2,50,60)
+    draw_many_squares(John,2,100,30)
     John.speed = 5
     John.pen = rg.Pen('red',5)
     draw_many_squares(John,10,50,15)

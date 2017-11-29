@@ -9,7 +9,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 
 ########################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   READ this comment, ASKING QUESTIONS as needed to understand it.
 #
 #   For objects that are CONSTRUCTED, we use the DOT notation
@@ -78,12 +78,14 @@ def main():
 
     jump_and_move_turtle(100, 50, 200, -100)
     turtle = rg.SimpleTurtle('square')
+
     draw_many_squares(turtle, 3, 75, 15)
     turtle3()
 
     # When the TODOs ask you to test YOUR code, put YOUR tests here:
 
     try_methods()
+    try_functions()
     try_methods_and_functions()
 
 
@@ -176,7 +178,7 @@ def try_methods():
       -- backward  100 units
     """
     thing = rg.SimpleTurtle()
-    thing.pen = rg.Pen('brown',5)
+    thing.pen = rg.Pen('brown', 5)
     thing.forward(150)
     thing.left(90)
     thing.forward(50)
@@ -196,13 +198,13 @@ def try_functions():
      -- One jumps to (100, 200), then moves (while drawing) to (0, 0)
      -- One jumps to (-50, 50), then moves (while drawing) to (100, 100)
     """
-
     jump_and_move_turtle(200,100,300,30)
     jump_and_move_turtle(100,200,0,0)
     jump_and_move_turtle(-50,50,100,100)
 
+
     ####################################################################
-    # TODO: 4. Implement this function, per its doc-string above.
+    # DONE: 4. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).  IMPORTANT, IMPORTANT, IMPORTANT:
     #    Keep reading the rest of this TO DO before doing the above!
@@ -250,20 +252,21 @@ def try_methods_and_functions():
 
     John = rg.SimpleTurtle()
     John.pen = rg.Pen('blue',5)
-    John.speed(1)
+    John.speed = 1
     draw_many_squares(John,2,50,60)
-    John.speed(5)
+    John.speed = 5
     John.pen = rg.Pen('red',5)
     draw_many_squares(John,10,50,15)
-    John.speed(100)
+    John.speed = 100
     John.pen = rg.Pen('red',35)
     draw_many_squares(John,8,300,60)
     John.pen = rg.Pen('black',3)
     John.backward(200)
     John.draw_circle(30)
     John.draw_square(50)
+
     ####################################################################
-    # TODO: 5. Implement this function, per its doc-string above.
+    # DONE: 5. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).  IMPORTANT, IMPORTANT, IMPORTANT:
     #    Keep reading the rest of this TO DO before doing the above!

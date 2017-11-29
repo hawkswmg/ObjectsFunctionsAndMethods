@@ -252,6 +252,7 @@ def try_methods_and_functions():
 
     John = rg.SimpleTurtle()
     John.pen = rg.Pen('blue',5)
+    John.backward(150)
     John.speed = 1
     draw_many_squares(John,2,50,60)
     John.speed = 5

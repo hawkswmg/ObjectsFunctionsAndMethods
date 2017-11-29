@@ -84,6 +84,7 @@ def main():
     # When the TODOs ask you to test YOUR code, put YOUR tests here:
 
     try_methods()
+    try_methods_and_functions()
 
 
 
@@ -246,6 +247,21 @@ def try_methods_and_functions():
 
       8. Draw a SQUARE whose sides are each of length 50.
     """
+
+    John = rg.SimpleTurtle()
+    John.pen = rg.Pen('blue',5)
+    John.speed(1)
+    draw_many_squares(John,2,50,60)
+    John.speed(5)
+    John.pen = rg.Pen('red',5)
+    draw_many_squares(John,10,50,15)
+    John.speed(100)
+    John.pen = rg.Pen('red',35)
+    draw_many_squares(John,8,300,60)
+    John.pen = rg.Pen('black',3)
+    John.backward(200)
+    John.draw_circle(30)
+    John.draw_square(50)
     ####################################################################
     # TODO: 5. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function

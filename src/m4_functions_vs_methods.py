@@ -4,8 +4,8 @@ Demonstrates using (calling) FUNCTIONS and using (calling) METHODS:
   -- how they differ.
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Megan Hawksworth.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ########################################################################
 #
@@ -82,6 +82,9 @@ def main():
     turtle3()
 
     # When the TODOs ask you to test YOUR code, put YOUR tests here:
+
+    try_methods()
+
 
 
     window.close_on_mouse_click()
@@ -171,8 +174,15 @@ def try_methods():
       -- forward    50 units
       -- backward  100 units
     """
+    thing = rg.SimpleTurtle()
+    thing.pen = rg.Pen('brown',5)
+    thing.forward(150)
+    thing.left(90)
+    thing.forward(50)
+    thing.backward(100)
+
     ####################################################################
-    # TODO: 3. Implement this function, per its doc-string above.
+    # DONE: 3. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).
     ####################################################################
@@ -185,6 +195,11 @@ def try_functions():
      -- One jumps to (100, 200), then moves (while drawing) to (0, 0)
      -- One jumps to (-50, 50), then moves (while drawing) to (100, 100)
     """
+
+    jump_and_move_turtle(200,100,300,30)
+    jump_and_move_turtle(100,200,0,0)
+    jump_and_move_turtle(-50,50,100,100)
+
     ####################################################################
     # TODO: 4. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function

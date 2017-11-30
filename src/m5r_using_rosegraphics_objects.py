@@ -79,8 +79,6 @@ def main():
     example3()
     window = rg.RoseWindow()
     window.close_on_mouse_click()
-    print(window)
-    window.render()
 
 def example1():
     """ Displays an empty window. """
